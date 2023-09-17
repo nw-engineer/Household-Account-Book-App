@@ -1,0 +1,12 @@
+[Unit]
+Description=FastAPI App
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/app
+ExecStart=/usr/local/bin/gunicorn -c /app/gunicorn_config.py main:app
+
+[Install]
+WantedBy=multi-user.target
