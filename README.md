@@ -23,6 +23,14 @@ uvicorn main:app --reload
 ```
 If you run it using the systemctl command, please rewrite the main.py path in the fastapi-app.service file appropriately.
 
+The API server can also be started using the following method.
+
+```bassh
+pip3 install Household_Account_Book_App
+cp Household-Account-Book-App/config.json ./
+Household_Account_Book_App
+```
+
 ## setting file
 You can decide what day of the month you want to start the month on.
 ```json
