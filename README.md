@@ -9,6 +9,8 @@ It is assumed that the following configuration will be used.
 - Python Library：fastapi,uvicorn,gunicorn,SQLAlchemy
 - WebServer: Nginx
 
+The following steps assume that the above environment has already been constructed.
+
 ## procedure
 ```bash
 git clone https://github.com/nw-engineer/Household-Account-Book-App.git
@@ -17,6 +19,7 @@ mv build.tar.gz /var/www/html/
 cd /var/www/html/
 tar zxvf build.tar.gz && chown -R nginx:nginx build
 cd Household-Account-Book-App
+cp app.conf /etc/nginx/conf.d/
 systemctl restart nginx
 uvicorn main:app --reload
 ```
