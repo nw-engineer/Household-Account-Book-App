@@ -15,7 +15,7 @@ git clone https://github.com/nw-engineer/Household-Account-Book-App.git
 cd Household-Account-Book-App
 mv build.tar.gz /var/www/html/
 cd /var/www/html/
-tar zxvf build.tar.gz && chown -R nginx:nginx build
+tar zxvf build.tar.gz && chown -R nginx:nginx build && rm -rf build.tar.gz
 cd Household-Account-Book-App
 cp app.conf /etc/nginx/conf.d/
 systemctl restart nginx
