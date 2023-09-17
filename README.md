@@ -17,6 +17,7 @@ mv build.tar.gz /var/www/html/
 cd /var/www/html/
 tar zxvf build.tar.gz && chown -R nginx:nginx build
 cd Household-Account-Book-App
+cp app.conf /etc/nginx/conf.d/
 systemctl restart nginx
 uvicorn main:app --reload
 ```
