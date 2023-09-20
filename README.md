@@ -1,4 +1,8 @@
 # Household-Account-Book-App
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/nw-engineer/Household-Account-Book-App/blob/main/LICENSE.txt) 
+[![](https://img.shields.io/badge/Pypi-0.0.1-FF9E0F.svg?logo=pypi&style=popout)](https://pypi.org/project/Household-Account-Book-App/)
+![](https://img.shields.io/badge/Python-3.11-3776AB.svg?logo=python&style=popout)
+[![Downloads](https://static.pepy.tech/badge/Household-Account-Book-App)](https://pepy.tech/project/Household-Account-Book-App)
 
 This app is a simple household account book.
 It is assumed that the following configuration will be used.
